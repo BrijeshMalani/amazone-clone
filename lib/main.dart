@@ -42,24 +42,24 @@ class MyApp extends StatelessWidget {
                     },
                     child: Text("Click Me"));
               }),
-              // Container(
-              //   height: 200,
-              //   width: 200,
-              //   child: BabylonJSViewer(src: "assets/obj/dice.obj"),
-              // ),
+              Container(
+                height: 200,
+                width: 200,
+                child: BabylonJSViewer(src: "assets/obj/dice.obj"),
+              ),
               SizedBox(
                 height: 10,
               ),
-              // Container(
-              //   height: 200,
-              //   width: 200,
-              //   color: Colors.red,
-              //   child: Cube(
-              //     onSceneCreated: (Scene scene) {
-              //       scene.world.add(Object(fileName: 'assets/obj/dice.obj'));
-              //     },
-              //   ),
-              // ),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.red,
+                child: Cube(
+                  onSceneCreated: (Scene scene) {
+                    scene.world.add(Object(fileName: 'assets/obj/dice.obj'));
+                  },
+                ),
+              ),
             ],
           ),
         ),
