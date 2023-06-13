@@ -1,8 +1,6 @@
 import 'package:amazonclone/router.dart';
 import 'package:amazonclone/view/auth/authScreen.dart';
-import 'package:babylonjs_viewer/babylonjs_viewer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_cube/flutter_cube.dart';
 
 import 'constant/global.dart';
 
@@ -42,23 +40,8 @@ class MyApp extends StatelessWidget {
                     },
                     child: Text("Click Me"));
               }),
-              Container(
-                height: 200,
-                width: 200,
-                child: BabylonJSViewer(src: "assets/obj/dice.obj"),
-              ),
               SizedBox(
                 height: 10,
-              ),
-              Container(
-                height: 200,
-                width: 200,
-                color: Colors.red,
-                child: Cube(
-                  onSceneCreated: (Scene scene) {
-                    scene.world.add(Object(fileName: 'assets/obj/dice.obj'));
-                  },
-                ),
               ),
             ],
           ),
